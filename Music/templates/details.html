@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <center>
+    <h3  style="color: burlywood; font: size 30px; background-color:black">
+       Album Details
+    </h3>
+   
+    <br />
+   
+  <h1> {{album.title}} - {{album.artist}} - {{album.publishDate}} - {{album.id}}</h1>
+
+  <div>
+    <p>List of Songs</p>
+    {% for i in songs%}
+    <P>{{i.title}}</P>
+    {% endfor %}
+  </div>
+
+
+   <br />
+  </center>
+</body>
+</html>

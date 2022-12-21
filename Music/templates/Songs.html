@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/show.css' %}">
+</head>
+<body >
+  <center>
+    <h3>
+        List of the Songs
+    </h3>
+    <br />
+   <!-- <img src="{% static "images/bg.jpg" %}"  /> -->
+  {% for i in songs %}
+  <div style="
+    color: blue; 
+    font-size:30px; 
+    margin-top: 5px; 
+    margin-bottom:5px;">
+    {{i.title | title}} 
+  </div>
+    
+  {% endfor %}
+    <br />
+    <br />
+   
+    <a href="http://127.0.0.1:8000/connect/"><button>Connect US</button></a>
+  </center>
+</body>
+</html>

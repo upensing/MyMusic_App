@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <div>
+            <center>
+                <h2>Create Your New Account</h2>
+                <form  method="post" action="">
+                {% csrf_token %}
+                    <label>Username</label><br />
+                    <input name="username" placeholder="Username" type="text" /><br /><br />
+                    <label>Password</label><br />
+                    <input name="password" placeholder="password" type="password" /><br /><br />
+                    <label>Email</label><br />
+                    <input name="email" placeholder="email address" type="text" /><br /><br />
+                    <input type="submit" /><br /><br />
+    
+                </form>
+                <p>
+                    You are  register user.<a href="{% url 'login' %}"> Login</a>
+                </p>    
+            </center>
+        </div>
+    </body>
+</html>
